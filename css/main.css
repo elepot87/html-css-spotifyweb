@@ -86,9 +86,13 @@ body {
   display: none;
 }
 
-ul.sidebar-nav-main {
-  list-style: none;
+.container-nav {
   flex-grow: 1;
+}
+
+ul.sidebar-nav-main,
+ul.sidebar-playlist {
+  list-style: none;
 }
 
 .flex-container.sidebar-icon {
