@@ -32,6 +32,10 @@ body {
   padding: 16px;
 }
 
+.px-16 {
+  padding: 0 16px;
+}
+
 .my-16 {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -101,6 +105,9 @@ ul.sidebar-playlist {
   align-items: center;
   justify-content: flex-start;
 }
+.sidebar-nav-main li:first-child {
+  border-left: 3px solid #99e22d;
+}
 
 .sidebar-icon .container-icon {
   width: 100%;
@@ -135,6 +142,7 @@ li.sidebar-icon .active {
   text-transform: uppercase;
   color: #fff;
   font-size: 12px;
+  padding-top: 5px;
 }
 
 .sidebar-playlist li.playlist .container-icon a .fa-plus {
