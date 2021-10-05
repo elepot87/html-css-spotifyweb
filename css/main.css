@@ -157,6 +157,11 @@ li.sidebar-icon .active {
   margin-right: 5px;
 }
 
+.sidebar-account .container-install a {
+  text-decoration: none;
+  color: #535353;
+}
+
 .sidebar-account .container-install hr {
   margin: 20px 0;
 }
