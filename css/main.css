@@ -97,6 +97,10 @@ ul.sidebar-nav-main {
   width: 15%;
 }
 
+.icon-grey {
+  filter: invert(65%);
+}
+
 /* Call to action */
 .cta {
   position: fixed;
