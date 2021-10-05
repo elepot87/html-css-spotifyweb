@@ -262,6 +262,7 @@ ul.menu {
   list-style: none;
   display: flex;
   justify-content: center;
+  /* align-items: flex-start; */
   flex-wrap: wrap;
 }
 
@@ -313,7 +314,9 @@ ul.menu .menu-item:hover {
   .main-nav {
     margin-top: 15%;
   }
-
+  .container-menu {
+    width: 100%;
+  }
   .content-cover .debug-box {
     width: calc(100% / 4 - 20px);
     margin: 10px 10px;
@@ -339,6 +342,10 @@ ul.menu .menu-item:hover {
 
   ul.menu .menu-item {
     width: calc(100% / 3);
+  }
+
+  .container-menu {
+    width: 100%;
   }
 
   .content-cover .debug-box {
@@ -377,5 +384,9 @@ ul.menu .menu-item:hover {
 
   .main-content {
     width: calc(100% - 60px);
+  }
+
+  .container-menu {
+    width: 100%;
   }
 }
