@@ -12,6 +12,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .section-content {
@@ -23,16 +24,52 @@ body {
   background-color: yellow;
 }
 
+/* Utilities */
+
+.flex-container {
+  display: flex;
+}
+
 /* Debug */
 
 .container-debug {
-  display: flex;
   padding: 10px;
 }
 
-.debug-box {
+.footer .debug-box {
   background-color: rgba(0, 0, 0, 0.3);
   width: calc(100% / 3 - 20px);
   height: 80px;
   margin: 0 10px;
+}
+
+/* Main content */
+
+.sidebar {
+  width: 20%;
+}
+
+.main-content {
+  width: 80%;
+  flex-direction: column;
+}
+
+.content-cover {
+  flex-grow: 1;
+  width: 100%;
+  padding: 10px;
+}
+
+.content-cover .debug-box {
+  width: calc(100% / 6 - 20px);
+  margin: 10px 10px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.playlist {
+  flex-wrap: wrap;
+  overflow: auto;
+  width: 100%;
+  justify-content: center;
 }
