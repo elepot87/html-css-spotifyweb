@@ -37,6 +37,10 @@ body {
   margin-bottom: 16px;
 }
 
+.mb-5 {
+  margin-bottom: 5px;
+}
+
 /* Debug */
 
 .container-debug {
@@ -87,14 +91,31 @@ ul.sidebar-nav-main {
   flex-grow: 1;
 }
 
-.sidebar-nav-main li a {
-  text-decoration: none;
-  color: #535353;
-  font-size: 12px;
+.flex-container.sidebar-icon {
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.sidebar-nav-main li a img {
+.sidebar-icon .container-icon {
+  width: 100%;
+  align-items: center;
+}
+
+.sidebar-nav-main li.sidebar-icon .container-icon a {
+  text-decoration: none;
+  display: block;
   width: 15%;
+}
+
+.sidebar-nav-main li.sidebar-icon .name-icon {
+  display: block;
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+li.sidebar-icon .active {
+  color: #fff;
 }
 
 .icon-grey {
