@@ -153,6 +153,30 @@ li.sidebar-icon .active {
   font-size: 14px;
 }
 
+.sidebar-account .container-install .icon-account {
+  margin-right: 5px;
+}
+
+.sidebar-account .container-install hr {
+  margin: 20px 0;
+}
+
+.sidebar-account .container-install .name-account {
+  color: #fff;
+  font-size: 14px;
+}
+
+.sidebar-account .container-install .fa-user {
+  color: #fff;
+  background-color: #a3a3a3;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+}
+
 /* Call to action */
 .cta {
   position: fixed;
