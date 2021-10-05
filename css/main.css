@@ -13,7 +13,7 @@ body {
 }
 
 .section-content {
-  background-color: dodgerblue;
+  background-color: #141922;
   height: calc(100vh - 90px);
 }
 
@@ -227,7 +227,7 @@ li.sidebar-icon .active {
 }
 
 .container-menu {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -244,6 +244,19 @@ ul.menu .menu-item {
   color: #535353;
   font-weight: 500;
   width: calc(100% / 6);
+  margin-top: 20px;
+}
+
+ul.menu .menu-item:first-child::after {
+  content: "";
+  border-bottom: 2px solid #99e22d;
+  width: 35%;
+  text-align: center;
+  display: inline-block;
+}
+
+ul.menu .menu-item .first-menu-item {
+  margin-bottom: -9px;
 }
 
 /* Main content */
