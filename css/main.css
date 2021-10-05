@@ -69,6 +69,8 @@ body {
   height: 100%;
   background-color: #000;
   color: #535353;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .sidebar-content {
@@ -114,8 +116,6 @@ ul.sidebar-playlist {
 .sidebar-nav-main li.sidebar-icon .name-icon {
   display: block;
   margin-left: 5px;
-  font-size: 12px;
-  font-weight: 600;
 }
 
 li.sidebar-icon .active {
@@ -124,6 +124,33 @@ li.sidebar-icon .active {
 
 .icon-grey {
   filter: invert(65%);
+}
+
+.sidebar-playlist li.playlist,
+.sidebar-playlist li h4 {
+  margin-bottom: 12px;
+}
+
+.sidebar-playlist li h4 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+
+.sidebar-playlist li.playlist .container-icon a .fa-plus {
+  color: #000;
+  background-color: #a3a3a3;
+  font-size: 20px;
+  margin-right: 5px;
+  border-radius: none;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sidebar-playlist li.playlist .container-icon .name-icon {
+  font-size: 14px;
 }
 
 /* Call to action */
