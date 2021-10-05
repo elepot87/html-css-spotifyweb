@@ -109,6 +109,7 @@ ul.sidebar-playlist {
   align-items: center;
   justify-content: flex-start;
 }
+
 .sidebar-nav-main li:first-child {
   border-left: 3px solid #99e22d;
 }
@@ -131,6 +132,10 @@ ul.sidebar-playlist {
 
 li.sidebar-icon .active {
   color: #fff;
+}
+
+.icon-white {
+  filter: invert(20%);
 }
 
 .icon-grey {
@@ -192,6 +197,28 @@ li.sidebar-icon .active {
   line-height: 25px;
   font-size: 18px;
   text-align: center;
+}
+
+/* Sidebar hover */
+
+.sidebar-nav-main .sidebar-icon:hover {
+  color: #fff;
+}
+
+.sidebar-nav-main li:first-child:hover img {
+  filter: invert(0%);
+}
+
+.sidebar-playlist li.playlist:hover .container-icon a .fa-plus {
+  background-color: #fff;
+}
+
+.sidebar-playlist li.playlist:hover {
+  color: #fff;
+}
+
+.sidebar-account .container-install:hover a span {
+  color: #fff;
 }
 
 /* Call to action */
@@ -257,6 +284,10 @@ ul.menu .menu-item:first-child::after {
 
 ul.menu .menu-item .first-menu-item {
   margin-bottom: -9px;
+}
+
+ul.menu .menu-item:hover {
+  color: #fff;
 }
 
 /* Main content */
