@@ -10,20 +10,16 @@
 body {
   background-color: red;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .section-content {
   background-color: dodgerblue;
-  flex-grow: 1;
-  overflow: auto;
+  height: calc(100vh - 90px);
 }
 
 .footer {
   background-color: yellow;
-  z-index: 1;
+  height: 90px;
 }
 
 /* Utilities */
@@ -56,21 +52,19 @@ body {
 
 .sidebar {
   width: 250px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+  height: 100%;
   background-color: orange;
 }
 
 .sidebar-content {
   width: 100%;
+  padding: 16px;
 }
 
 .main-content {
   width: calc(100% - 250px);
   flex-direction: column;
-  margin-left: 18%;
+  overflow: auto;
 }
 
 .content-cover {
@@ -103,9 +97,5 @@ body {
     margin: 10px 10px;
     height: 200px;
     background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .main-content {
-    margin-left: 25%;
   }
 }
