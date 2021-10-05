@@ -40,8 +40,15 @@ body {
 .footer .debug-box {
   background-color: rgba(0, 0, 0, 0.3);
   width: calc(100% / 3 - 20px);
-  height: 80px;
+  height: 60px;
   margin: 0 10px;
+}
+
+.content-cover .debug-box {
+  width: calc(100% / 6 - 20px);
+  margin: 10px 10px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Main content */
@@ -51,6 +58,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  height: 100vh;
 }
 
 .main-content {
@@ -64,9 +72,31 @@ body {
   flex-wrap: wrap;
 }
 
-.content-cover .debug-box {
-  width: calc(100% / 6 - 20px);
-  margin: 10px 10px;
-  height: 200px;
-  background-color: rgba(0, 0, 0, 0.3);
+.cta {
+  position: fixed;
+  top: 0;
+  right: 0;
+  text-align: right;
+  width: calc(100% - 20%);
+  background-color: white;
+}
+
+.main-nav {
+  margin-top: 4%;
+  text-align: center;
+}
+
+/* Ipotesi media query  */
+@media screen and (max-width: 1100px) {
+  .cta {
+    background-color: red;
+  }
+
+  .sidebar-content {
+    flex-shrink: 1;
+  }
+
+  .content-cover {
+    flex-shrink: 2;
+  }
 }
