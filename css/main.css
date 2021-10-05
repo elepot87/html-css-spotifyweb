@@ -18,6 +18,7 @@ body {
 .section-content {
   background-color: dodgerblue;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .footer {
@@ -47,29 +48,25 @@ body {
 
 .sidebar {
   width: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .main-content {
   width: 80%;
   flex-direction: column;
+  margin-left: 21%;
 }
 
 .content-cover {
-  flex-grow: 1;
-  width: 100%;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .content-cover .debug-box {
   width: calc(100% / 6 - 20px);
   margin: 10px 10px;
-  height: 80px;
+  height: 200px;
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.playlist {
-  flex-wrap: wrap;
-  overflow: auto;
-  width: 100%;
-  justify-content: center;
 }
