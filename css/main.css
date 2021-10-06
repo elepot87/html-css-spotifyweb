@@ -354,10 +354,10 @@ ul.menu .menu-item:hover {
   .container-menu {
     width: 100%;
   }
-  /* .content-cover .debug-box {
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.3);
-  } */
+
+  .cover-content .card {
+    width: calc(100% / 4 - 15px);
+  }
 
   ul.menu .menu-item {
     width: calc(100% / 5);
@@ -383,12 +383,9 @@ ul.menu .menu-item:hover {
     width: 100%;
   }
 
-  /* .content-cover .debug-box {
-    width: calc(100% / 2 - 20px);
-    margin: 10px 10px;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.3);
-  } */
+  .cover-content .card {
+    width: calc(100% / 2 - 15px);
+  }
 }
 
 /* Schermi da 500px a 599px */
@@ -406,12 +403,9 @@ ul.menu .menu-item:hover {
     width: calc(100% / 4);
   }
 
-  /* .content-cover .debug-box {
-    width: calc(100% / 2 - 20px);
-    margin: 10px 10px;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.3);
-  } */
+  .cover-content .card {
+    width: calc(100% / 2 - 15px);
+  }
 
   .sidebar {
     width: 60px;
