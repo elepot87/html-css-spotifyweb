@@ -99,8 +99,12 @@ body {
   justify-content: space-between;
 }
 
-.brand-logo-desktop img {
+.logo .logo-desktop {
   max-width: 65%;
+}
+
+.logo .logo-mobile {
+  display: none;
 }
 
 .brand-logo-mobile {
@@ -406,16 +410,20 @@ ul.menu .menu-item:hover {
 
 .footer-left,
 .footer-right {
-  width: 250px;
+  width: 25%;
 }
 
 .footer-center {
-  width: calc(100% - 500px);
+  width: 50%;
 }
 
 .footer-left {
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-left: 16px;
+}
+
+.footer-left .container-song {
+  margin-right: 50px;
 }
 
 .footer-left .container-song,
@@ -501,11 +509,15 @@ ul.menu .menu-item:hover {
   display: none;
 }
 
+.footer-right {
+  justify-content: flex-end;
+}
+
 .footer-right .progress-bar-small {
   background-color: #5a5a5a;
   height: 5px;
   width: 200px;
-  margin: 0 20px;
+  margin: 0 10px;
   border-radius: 10px;
   position: relative;
 }
@@ -575,7 +587,7 @@ ul.menu .menu-item:hover {
   display: block;
 }
 
-/* Ipotesi media query  */
+/*Media query  */
 
 /* Schermi da 700 a 1100px */
 @media screen and (min-width: 700px) and (max-width: 1100px) {
@@ -594,21 +606,27 @@ ul.menu .menu-item:hover {
     width: calc(100% / 4 - 15px);
   }
 
-  /* ul.menu .menu-item {
-    margin: 10px;
-  } */
-
-  .footer-left {
-    margin: 0 50px 0 0;
-  }
-
-  .footer-right {
-    margin: 0 0 0 50px;
+  .footer-center {
+    padding: 0 50px;
   }
 
   .footer-center .player .progress-bar {
-    height: 5px;
-    width: 380px;
+    width: 350px;
+  }
+
+  .footer-center .player,
+  .footer-center .container-icon,
+  .footer-right .footer-icon-right {
+    font-size: 12px;
+  }
+
+  .footer-center .container-icon .fa-play-circle {
+    font-size: 25px;
+  }
+
+  .footer-right .progress-bar-small {
+    width: 120px;
+    margin: 0 5px;
   }
 }
 
@@ -622,10 +640,6 @@ ul.menu .menu-item:hover {
     margin-top: 20%;
   }
 
-  /* ul.menu .menu-item {
-    width: calc(100% / 3);
-  } */
-
   .container-menu {
     width: 100%;
   }
@@ -634,21 +648,44 @@ ul.menu .menu-item:hover {
     width: calc(100% / 2 - 15px);
   }
 
-  .footer-center .player .progress-bar {
-    height: 5px;
-    width: 200px;
+  .footer-left .container-song {
+    margin-right: 25px;
   }
 
   .footer-left .container-icon {
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
-  .footer-left {
-    margin: 0 70px 0 0;
+  .footer-left .container-icon .icon {
+    font-size: 14px;
   }
 
-  .footer-right {
-    margin: 0 0 0 70px;
+  .footer-center .player .progress-bar {
+    width: 200px;
+  }
+
+  .footer-center {
+    padding: 0 60px;
+  }
+
+  .footer-center .player,
+  .footer-center .container-icon,
+  .footer-right .footer-icon-right {
+    font-size: 12px;
+  }
+
+  .footer-center .container-icon .fa-play-circle {
+    font-size: 20px;
+  }
+
+  .footer-right .progress-bar-small {
+    width: 120px;
+    margin: 0 5px 0 2px;
+  }
+
+  .footer-right .footer-icon-right {
+    margin: 0px 5px;
   }
 }
 
@@ -663,16 +700,44 @@ ul.menu .menu-item:hover {
     margin-top: 20%;
   }
 
-  /* ul.menu .menu-item {
-    width: calc(100% / 4);
-  } */
-
   .cover-content .card {
     width: calc(100% / 2 - 15px);
   }
 
   .sidebar {
     width: 60px;
+  }
+
+  .logo .logo-desktop {
+    display: none;
+  }
+
+  .logo .logo-mobile {
+    display: block;
+  }
+
+  .sidebar-nav-main .sidebar-icon .container-icon .name-icon {
+    display: none;
+  }
+
+  ul.sidebar-playlist {
+    display: none;
+  }
+
+  .sidebar-account .container-install {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar-account .container-install a {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-account .container-install a span,
+  .sidebar-account .container-install hr,
+  .sidebar-account .container-install .name-account {
+    display: none;
   }
 
   .main-content {
@@ -683,8 +748,62 @@ ul.menu .menu-item:hover {
     width: 100%;
   }
 
+  .footer-left .container-icon {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-left .container-icon {
+    margin-bottom: 5px;
+  }
+
+  .footer-left .container-song {
+    margin-right: 10px;
+  }
+
+  .footer-left .container-song img {
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  .footer-left .container-song .name-song h5,
+  .footer-left .container-song .name-song .brano-nome {
+    font-size: 10px;
+  }
+
+  .footer-left .container-icon .icon {
+    font-size: 12px;
+  }
+
+  .footer-center {
+    padding: 0 60px;
+  }
+
   .footer-center .player .progress-bar {
-    height: 5px;
-    width: 200px;
+    width: 150px;
+    margin: 0 10px;
+  }
+
+  .footer-center .player,
+  .footer-center .container-icon,
+  .footer-right .footer-icon-right {
+    font-size: 10px;
+  }
+
+  .footer-center .container-icon li {
+    margin: 0 10px;
+  }
+
+  .footer-center .container-icon .fa-play-circle {
+    font-size: 18px;
+  }
+
+  .footer-right .progress-bar-small {
+    width: 80px;
+    margin: 0 8px 0 0;
+  }
+
+  .footer-right .footer-icon-right {
+    margin: 0px 5px;
   }
 }
