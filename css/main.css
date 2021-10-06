@@ -434,14 +434,13 @@ ul.menu .menu-item:hover {
 
 .footer-center {
   flex-direction: column;
-}
-
-.footer-center {
   justify-content: center;
   color: #fff;
+  align-items: center;
 }
 
-.footer-center .container-icon {
+.footer-center .container-icon,
+.footer-center .player {
   align-items: center;
 }
 
@@ -451,6 +450,51 @@ ul.menu .menu-item:hover {
 
 .footer-center .container-icon .fa-play-circle {
   font-size: 30px;
+}
+
+.footer-center .player {
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer-center .player .progress-bar {
+  background-color: #5a5a5a;
+  height: 5px;
+  width: 500px;
+  margin: 0 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.footer-center .player .progress-bar::after {
+  content: "";
+  background-color: #c1c1c1;
+  display: inline-block;
+  height: 5px;
+  width: 20%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-center .player .progress-bar .fa-circle {
+  position: absolute;
+  top: -4px;
+  left: 19%;
+  z-index: 1;
+  display: none;
+}
+
+/* Hover footer */
+.footer-center .player .progress-bar:hover::after {
+  background-color: #99e22d;
+}
+
+.footer-center .player .progress-bar:hover .fa-circle {
+  display: block;
 }
 
 /* Ipotesi media query  */
