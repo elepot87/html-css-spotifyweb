@@ -92,7 +92,7 @@ body {
   width: 250px;
   height: 100%;
   background-color: #000;
-  color: #535353;
+  color: #6b6b6b;
   font-size: 12px;
   font-weight: 600;
 }
@@ -286,7 +286,7 @@ ul.menu .menu-item {
   display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
-  color: #535353;
+  color: #6b6b6b;
   font-weight: 600;
   width: calc(100% / 6);
   margin-top: 20px;
@@ -345,7 +345,7 @@ ul.menu .menu-item:hover {
 .cover-content .card .info .subtitle,
 .create-for-you .subtitle,
 .popular-artist .subtitle {
-  color: #535353;
+  color: #6b6b6b;
   font-size: 12px;
   font-weight: 500;
 }
