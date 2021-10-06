@@ -346,6 +346,10 @@ ul.menu .menu-item:hover {
   font-weight: 500;
 }
 
+.cover-content .card .img-cover {
+  position: relative;
+}
+
 .cover-content .card .img-cover img {
   object-fit: cover;
   max-width: 100%;
@@ -353,6 +357,18 @@ ul.menu .menu-item:hover {
 
 .popular-artist .cover-content .card .img-cover img {
   border-radius: 50%;
+}
+
+.cover-content .img-cover::before {
+  content: "\f144";
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-size: 35px;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Ipotesi media query  */
