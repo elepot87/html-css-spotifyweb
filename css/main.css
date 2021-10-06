@@ -57,6 +57,10 @@ body {
   margin-bottom: 10px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 /* Debug */
 
 .container-debug {
@@ -309,9 +313,9 @@ ul.menu .menu-item:hover {
 }
 
 .recently-playlist h2,
-.create-for-you h2 {
+.create-for-you h2,
+.popular-artist h2 {
   color: #fff;
-  margin-top: 30px;
   font-size: 20px;
 }
 
@@ -335,7 +339,8 @@ ul.menu .menu-item:hover {
 }
 
 .cover-content .card .info .subtitle,
-.create-for-you .subtitle {
+.create-for-you .subtitle,
+.popular-artist .subtitle {
   color: #535353;
   font-size: 12px;
   font-weight: 500;
@@ -344,6 +349,10 @@ ul.menu .menu-item:hover {
 .cover-content .card .img-cover img {
   object-fit: cover;
   max-width: 100%;
+}
+
+.popular-artist .cover-content .card .img-cover img {
+  border-radius: 50%;
 }
 
 /* Ipotesi media query  */
