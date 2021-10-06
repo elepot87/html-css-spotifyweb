@@ -413,13 +413,18 @@ ul.menu .menu-item:hover {
   width: calc(100% - 500px);
 }
 
+.footer-left {
+  justify-content: space-between;
+  padding-left: 16px;
+}
+
 .footer-left .container-song,
 .footer-left .container-icon {
   align-items: center;
 }
 
 .footer-left .container-song img {
-  width: 12%;
+  width: 50px;
   margin-right: 10px;
 }
 
@@ -590,12 +595,24 @@ ul.menu .menu-item:hover {
   }
 
   /* ul.menu .menu-item {
-    width: calc(100% / 5);
+    margin: 10px;
   } */
+
+  .footer-left {
+    margin: 0 50px 0 0;
+  }
+
+  .footer-right {
+    margin: 0 0 0 50px;
+  }
+
+  .footer-center .player .progress-bar {
+    height: 5px;
+    width: 380px;
+  }
 }
 
 /* Schermi da 600px a 699px */
-
 @media screen and (min-width: 600px) and (max-width: 699px) {
   .cta {
     background-color: green;
@@ -615,6 +632,23 @@ ul.menu .menu-item:hover {
 
   .cover-content .card {
     width: calc(100% / 2 - 15px);
+  }
+
+  .footer-center .player .progress-bar {
+    height: 5px;
+    width: 200px;
+  }
+
+  .footer-left .container-icon {
+    flex-wrap: wrap;
+  }
+
+  .footer-left {
+    margin: 0 70px 0 0;
+  }
+
+  .footer-right {
+    margin: 0 0 0 70px;
   }
 }
 
@@ -647,5 +681,10 @@ ul.menu .menu-item:hover {
 
   .container-menu {
     width: 100%;
+  }
+
+  .footer-center .player .progress-bar {
+    height: 5px;
+    width: 200px;
   }
 }
