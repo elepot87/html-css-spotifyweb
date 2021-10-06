@@ -18,7 +18,7 @@ body {
 }
 
 .footer {
-  background-color: yellow;
+  background-color: #282828;
   height: 90px;
 }
 
@@ -71,12 +71,12 @@ body {
   padding: 10px;
 }
 
-.footer .debug-box {
+/* .footer .debug-box {
   background-color: rgba(0, 0, 0, 0.3);
   width: calc(100% / 3 - 20px);
   height: 60px;
   margin: 0 10px;
-}
+} */
 
 /* .cover .debug-box {
   width: calc(100% / 6 - 20px);
@@ -192,7 +192,7 @@ li.sidebar-icon .active {
 
 .sidebar-account .container-install a {
   text-decoration: none;
-  color: #535353;
+  color: #6b6b6b;
 }
 
 .sidebar-account .container-install hr {
@@ -393,6 +393,34 @@ ul.menu .menu-item:hover {
 
 .card:hover .img-cover .background {
   display: block;
+}
+
+/* Footer */
+
+.footer .container-footer {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left .container-song {
+  align-items: center;
+}
+
+.footer-left .container-song img {
+  width: 12%;
+  margin-right: 10px;
+}
+
+.footer-left .container-song .name-song h5 {
+  color: #fff;
+  margin: 0;
+  font-size: 12px;
+}
+
+.footer-left .container-song .name-song .brano-nome {
+  color: #6b6b6b;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 /* Ipotesi media query  */
