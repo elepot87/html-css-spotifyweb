@@ -17,11 +17,6 @@ body {
   height: calc(100vh - 90px);
 }
 
-.footer {
-  background-color: #282828;
-  height: 90px;
-}
-
 /* Utilities */
 
 .flex-container {
@@ -114,6 +109,7 @@ body {
 
 .container-nav {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 ul.sidebar-nav-main,
@@ -289,8 +285,7 @@ ul.menu .menu-item {
   font-size: 12px;
   color: #6b6b6b;
   font-weight: 600;
-  width: calc(100% / 6);
-  margin-top: 20px;
+  margin: 20px 15px 0;
 }
 
 ul.menu .menu-item:first-child::after {
@@ -401,10 +396,21 @@ ul.menu .menu-item:hover {
 .footer {
   justify-content: space-between;
   color: #fff;
+  background-color: #282828;
+  height: 90px;
 }
 
 .footer ul {
   list-style: none;
+}
+
+.footer-left,
+.footer-right {
+  width: 250px;
+}
+
+.footer-center {
+  width: calc(100% - 500px);
 }
 
 .footer-left .container-song,
@@ -565,9 +571,9 @@ ul.menu .menu-item:hover {
     width: calc(100% / 4 - 15px);
   }
 
-  ul.menu .menu-item {
+  /* ul.menu .menu-item {
     width: calc(100% / 5);
-  }
+  } */
 }
 
 /* Schermi da 600px a 699px */
@@ -581,9 +587,9 @@ ul.menu .menu-item:hover {
     margin-top: 20%;
   }
 
-  ul.menu .menu-item {
+  /* ul.menu .menu-item {
     width: calc(100% / 3);
-  }
+  } */
 
   .container-menu {
     width: 100%;
@@ -605,9 +611,9 @@ ul.menu .menu-item:hover {
     margin-top: 20%;
   }
 
-  ul.menu .menu-item {
+  /* ul.menu .menu-item {
     width: calc(100% / 4);
-  }
+  } */
 
   .cover-content .card {
     width: calc(100% / 2 - 15px);
