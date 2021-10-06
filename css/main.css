@@ -523,6 +523,7 @@ ul.menu .menu-item:hover {
   left: 19%;
   z-index: 1;
   display: none;
+  font-size: 12px;
 }
 
 .footer-right .footer-icon-right {
@@ -531,9 +532,26 @@ ul.menu .menu-item:hover {
 
 /* Hover footer */
 
-.footer-left .brano-nome:hover {
+.footer-left .name-song .brano-nome:hover {
   text-decoration: underline;
   color: #fff;
+}
+
+.footer-left .container-icon .icon:hover {
+  color: #fff;
+}
+
+.footer-center .container-icon .fa-play-circle:hover {
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 30px;
+  }
+  100% {
+    font-size: 35px;
+  }
 }
 
 .footer-center .player .progress-bar:hover::after {
