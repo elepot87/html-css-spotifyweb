@@ -53,6 +53,10 @@ body {
   margin-bottom: 5px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 /* Debug */
 
 .container-debug {
@@ -304,7 +308,8 @@ ul.menu .menu-item:hover {
   overflow: auto;
 }
 
-.recently-playlist h2 {
+.recently-playlist h2,
+.create-for-you h2 {
   color: #fff;
   margin-top: 30px;
   font-size: 20px;
@@ -329,7 +334,8 @@ ul.menu .menu-item:hover {
   margin: 10px 0;
 }
 
-.cover-content .card .info .subtitle {
+.cover-content .card .info .subtitle,
+.create-for-you .subtitle {
   color: #535353;
   font-size: 12px;
   font-weight: 500;
