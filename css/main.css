@@ -61,6 +61,10 @@ body {
   margin-top: 30px;
 }
 
+.br-radius {
+  border-radius: 50%;
+}
+
 /* Debug */
 
 .container-debug {
@@ -369,6 +373,26 @@ ul.menu .menu-item:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
+}
+
+.cover-content .card .img-cover .background {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  display: none;
+}
+
+/* Hover cover */
+
+.card:hover .img-cover::before {
+  display: block;
+}
+
+.card:hover .img-cover .background {
+  display: block;
 }
 
 /* Ipotesi media query  */
