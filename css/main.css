@@ -244,7 +244,7 @@ li.sidebar-icon .active {
   right: 0;
   text-align: right;
   width: calc(100% - 250px);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
 }
 
@@ -524,6 +524,12 @@ ul.menu .menu-item:hover {
 }
 
 /* Hover footer */
+
+.footer-left .brano-nome:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
 .footer-center .player .progress-bar:hover::after {
   background-color: #99e22d;
 }
