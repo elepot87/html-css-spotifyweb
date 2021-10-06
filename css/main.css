@@ -126,8 +126,17 @@ ul.sidebar-playlist {
   justify-content: flex-start;
 }
 
-.sidebar-nav-main li:first-child {
+ul.sidebar-nav-main li:first-child {
+  position: relative;
+}
+
+.sidebar-nav-main li:first-child::before {
+  content: "";
   border-left: 3px solid #99e22d;
+  display: inline-block;
+  height: 30px;
+  position: absolute;
+  top: 0;
 }
 
 .sidebar-icon .container-icon {
@@ -138,7 +147,7 @@ ul.sidebar-playlist {
 .sidebar-nav-main li.sidebar-icon .container-icon a {
   text-decoration: none;
   display: block;
-  width: 15%;
+  width: 30px;
 }
 
 .sidebar-nav-main li.sidebar-icon .name-icon {
@@ -712,8 +721,16 @@ ul.menu .menu-item:hover {
     display: none;
   }
 
+  .logo {
+    padding: 16px 16px 0;
+  }
+
   .logo .logo-mobile {
     display: block;
+  }
+
+  .sidebar-nav-main li:first-child::before {
+    display: none;
   }
 
   .sidebar-nav-main .sidebar-icon .container-icon .name-icon {
