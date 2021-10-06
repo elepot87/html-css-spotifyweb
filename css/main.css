@@ -245,6 +245,7 @@ li.sidebar-icon .active {
   text-align: right;
   width: calc(100% - 250px);
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .cta a {
