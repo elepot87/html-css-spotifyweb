@@ -397,12 +397,16 @@ ul.menu .menu-item:hover {
 
 /* Footer */
 
-.footer .container-footer {
+.footer {
   justify-content: space-between;
-  align-items: center;
 }
 
-.footer-left .container-song {
+.footer ul {
+  list-style: none;
+}
+
+.footer-left .container-song,
+.footer-left .container-icon {
   align-items: center;
 }
 
@@ -421,6 +425,32 @@ ul.menu .menu-item:hover {
   color: #6b6b6b;
   font-size: 12px;
   font-weight: 500;
+}
+
+.footer-left .container-icon .icon {
+  margin-right: 10px;
+  color: #6b6b6b;
+}
+
+.footer-center {
+  flex-direction: column;
+}
+
+.footer-center {
+  justify-content: center;
+  color: #fff;
+}
+
+.footer-center .container-icon {
+  align-items: center;
+}
+
+.footer-center .container-icon li {
+  margin: 0 20px;
+}
+
+.footer-center .container-icon .fa-play-circle {
+  font-size: 30px;
 }
 
 /* Ipotesi media query  */

@@ -258,20 +258,36 @@
       </main>
     </section>
     <!-- Sezione macro Footer -->
-    <section class="footer p-16">
-      <div class="container-footer flex-container">
-        <div class="footer-left">
-          <div class="container-song flex-container">
-            <img src="./img/sinister.jpeg" alt="sinister" />
-            <div class="name-song">
-              <h5>Sinister</h5>
-              <div class="brano-nome">Brano nome</div>
-            </div>
+    <section class="footer p-16 flex-container">
+      <!-- Footer sinistra -->
+      <ul class="footer-left flex-container">
+        <li class="container-song flex-container">
+          <img src="./img/sinister.jpeg" alt="sinister" />
+          <div class="name-song">
+            <h5>Sinister</h5>
+            <div class="brano-nome">Brano nome</div>
           </div>
-        </div>
-        <div class="footer-center">ciao</div>
-        <div class="footer-right">ciao</div>
-      </div>
+        </li>
+        <li class="container-icon flex-container">
+          <i class="far fa-heart icon"></i>
+          <i class="far fa-folder icon"></i>
+        </li>
+      </ul>
+      <!-- Footer centrale -->
+      <ul class="footer-center flex-container">
+        <ul class="container-icon flex-container">
+          <li><i class="fas fa-random"></i></li>
+          <li><i class="fas fa-step-forward"></i></li>
+          <li><i class="far fa-play-circle"></i></li>
+          <li><i class="fas fa-step-forward"></i></li>
+          <li><i class="fas fa-redo-alt"></i></li>
+        </ul>
+        <div class="player">player</div>
+      </ul>
+      <!-- Footer destra -->
+      <ul class="footer-right flex-container">
+        ciao
+      </ul>
     </section>
   </body>
 </html>
