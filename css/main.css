@@ -399,6 +399,7 @@ ul.menu .menu-item:hover {
 
 .footer {
   justify-content: space-between;
+  color: #fff;
 }
 
 .footer ul {
@@ -416,7 +417,6 @@ ul.menu .menu-item:hover {
 }
 
 .footer-left .container-song .name-song h5 {
-  color: #fff;
   margin: 0;
   font-size: 12px;
 }
@@ -435,12 +435,12 @@ ul.menu .menu-item:hover {
 .footer-center {
   flex-direction: column;
   justify-content: center;
-  color: #fff;
   align-items: center;
 }
 
 .footer-center .container-icon,
-.footer-center .player {
+.footer-center .player,
+.footer-right {
   align-items: center;
 }
 
@@ -459,7 +459,8 @@ ul.menu .menu-item:hover {
   font-weight: 500;
 }
 
-.footer-center .player .progress-bar {
+.footer-center .player .progress-bar,
+.footer-right .progress-bar {
   background-color: #5a5a5a;
   height: 5px;
   width: 500px;
@@ -488,12 +489,53 @@ ul.menu .menu-item:hover {
   display: none;
 }
 
+.footer-right .progress-bar-small {
+  background-color: #5a5a5a;
+  height: 5px;
+  width: 200px;
+  margin: 0 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.footer-right .progress-bar-small::after {
+  content: "";
+  background-color: #c1c1c1;
+  display: inline-block;
+  height: 5px;
+  width: 20%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-right .progress-bar-small .fa-circle {
+  position: absolute;
+  top: -4px;
+  left: 19%;
+  z-index: 1;
+  display: none;
+}
+
+.footer-right .footer-icon-right {
+  margin: 0 10px;
+}
+
 /* Hover footer */
 .footer-center .player .progress-bar:hover::after {
   background-color: #99e22d;
 }
 
 .footer-center .player .progress-bar:hover .fa-circle {
+  display: block;
+}
+
+.footer-right .progress-bar-small:hover::after {
+  background-color: #99e22d;
+}
+
+.footer-right .progress-bar-small:hover .fa-circle {
   display: block;
 }
 
