@@ -366,6 +366,7 @@ ul.menu .menu-item:hover {
 .cover-content .card .img-cover img {
   object-fit: cover;
   max-width: 100%;
+  transition: 0.5 all;
 }
 
 .popular-artist .cover-content .card .img-cover img {
@@ -385,14 +386,33 @@ ul.menu .menu-item:hover {
   display: none;
 }
 
-.cover-content .card .img-cover .background {
+/* .cover-content .card .img-cover .background {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
   bottom: 0;
   display: none;
-}
+} */
+
+/* .cover-content .card .img-cover::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+} */
+
+/* .cover-content .card .img-cover.br-radius::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+} */
 
 /* Hover cover */
 
@@ -400,8 +420,8 @@ ul.menu .menu-item:hover {
   display: block;
 }
 
-.card:hover .img-cover .background {
-  display: block;
+.card:hover .img-cover {
+  opacity: 0.5;
 }
 
 /* Footer */
