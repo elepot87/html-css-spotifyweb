@@ -62,9 +62,9 @@ body {
 
 /* Debug */
 
-.container-debug {
+/* .container-debug {
   padding: 10px;
-}
+} */
 
 /* .footer .debug-box {
   background-color: rgba(0, 0, 0, 0.3);
@@ -367,10 +367,6 @@ ul.menu .menu-item:hover {
   object-fit: cover;
   max-width: 100%;
   transition: 0.5 all;
-}
-
-.popular-artist .cover-content .card .img-cover img {
-  border-radius: 50%;
 }
 
 .cover-content .img-cover::before {
