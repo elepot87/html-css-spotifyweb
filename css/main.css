@@ -592,7 +592,7 @@ ul.menu .menu-item:hover {
 /* Schermi da 700 a 1100px */
 @media screen and (min-width: 700px) and (max-width: 1100px) {
   .cta {
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .main-nav {
@@ -633,7 +633,7 @@ ul.menu .menu-item:hover {
 /* Schermi da 600px a 699px */
 @media screen and (min-width: 600px) and (max-width: 699px) {
   .cta {
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .main-nav {
@@ -692,7 +692,7 @@ ul.menu .menu-item:hover {
 /* Schermi da 500px a 599px */
 @media screen and (min-width: 500px) and (max-width: 599px) {
   .cta {
-    background-color: purple;
+    background-color: rgba(0, 0, 0, 0.7);
     width: calc(100% - 60px);
   }
 
