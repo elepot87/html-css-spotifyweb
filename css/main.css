@@ -568,16 +568,7 @@ ul.menu .menu-item:hover {
 }
 
 .footer-center .container-icon .fa-play-circle:hover {
-  animation: pulse 0.5s;
-}
-
-@keyframes pulse {
-  0% {
-    font-size: 30px;
-  }
-  100% {
-    font-size: 35px;
-  }
+  transform: scale(1.2);
 }
 
 .footer-center .player .progress-bar:hover::after {
